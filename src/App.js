@@ -1,17 +1,7 @@
-import { Component } from "react";
-import ScrollBox from './ScrollBox'
+import Counter2 from './Counter2';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <ScrollBox ref={(ref => this.ScrollBox=ref)}/>
-        <button onClick={() => this.ScrollBox.scrollToBotton()}>
-          맨 밑으로
-        </button>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return <Counter2 />;
+};
 
 export default App;
